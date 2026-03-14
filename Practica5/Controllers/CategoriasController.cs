@@ -6,9 +6,10 @@ using Practica5.Models;
 
 namespace Practica5.Controllers;
 
+[Authorize] // Protegemos todos los endpoints por defecto
 [ApiController]
 [Route("api/[controller]")]
-[Authorize] // Protegemos todos los endpoints por defecto
+
 public class CategoriasController : ControllerBase
 {
     private readonly AppDbContext _context;
